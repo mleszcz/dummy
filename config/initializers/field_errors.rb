@@ -5,7 +5,7 @@ ActionView::Base.field_error_proc = proc do |html_tag, instance|
             <<~HTML
               <div class="has-error">
                 #{html_tag}
-                <div class="text-danger font-size-sm text-right">#{message}</div>
+                <div class="text-danger font-size-sm">#{message}</div>
               </div>
             HTML
           else

@@ -1,11 +1,18 @@
 .row.justify-content-center
-  = form_with model: @user, class: 'col-4' do |f|
-    .form-group
-      = f.label :email
-      = f.text_field :email, class: 'form-control'
+  .col-4
+    = errors_for @user
 
-    .form-group
-      = f.label :password
-      = f.password_field :password, class: 'form-control'
+    = form_with model: @user do |f|
+      .form-group
+        = f.label :name, 'Full name'
+        = f.text_field :name, class: 'form-control'
 
-    = f.submit 'Sign up now!', class: 'btn btn-primary'
+      .form-group
+        = f.label :email
+        = f.text_field :email, class: 'form-control'
+
+      .form-group
+        = f.label :password
+        = f.password_field :password, class: 'form-control'
+
+      = f.submit 'Sign up now!', class: 'btn btn-primary'
