@@ -1,12 +1,12 @@
-ruby "2.4.2"
+ruby "2.6.3"
 source "https://rubygems.org"
 
 gem "sqlite3"
 gem "puma"
-gem "rails"
+gem "rails", '6'
 
-gem "sass-rails", "~> 5.0"
-gem "turbolinks", "~> 5"
+gem "sass-rails"
+gem "turbolinks"
 gem "uglifier", ">= 1.3.0"
 
 gem 'bootstrap'
