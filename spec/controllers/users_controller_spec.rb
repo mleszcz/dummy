@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :request do
   describe '#create' do
-    let(:params) { { email: 'a@a.com', password: '1234' } }
+    let(:params) { { email: 'a@a.com', password: '1234', name: 'Chuck Norris' } }
 
     def do_request
       post users_path, params: { user: params }
