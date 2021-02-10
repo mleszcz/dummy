@@ -1,9 +1,9 @@
-ruby "2.6.3"
+ruby File.read('.ruby-version').chomp
 source "https://rubygems.org"
 
 gem "sqlite3"
 gem "puma"
-gem "rails", '6'
+gem "rails", '6.0.3.4'
 
 gem "sass-rails"
 gem "turbolinks"
