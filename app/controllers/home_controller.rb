@@ -1,3 +1,7 @@
 class HomeController < ApplicationController
-  def index; end
+  CUSTOMER_REVIEW_IDS = [1, 2, 3].freeze
+
+  def index
+    @customer_reviews = ContentfulClient.fetch(CUSTOMER_REVIEW_IDS)
+  end
 end

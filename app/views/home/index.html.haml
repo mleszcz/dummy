@@ -1,10 +1,18 @@
-.row
-  .col-6
-    %h1 This website is Amazing!
-    %p
-      Lorem ipsum dolor sit amet.
+- content_for :hero do
+  .row.text-white
+    .col-6
+      %h1 This website is Amazing!
+      %p
+        Lorem ipsum dolor sit amet.
 
-  .col-6
-    %p
-      Be part of the revolution. Join us now!
-    = link_to 'Sign up', sign_up_path, class: 'btn btn-primary'
+    .col-6
+      %p
+        Be part of the revolution. Join us now!
+      = link_to 'Sign up', sign_up_path, class: 'btn btn-primary'
+
+.row
+  - @customer_reviews.each do |review|
+    .col-4
+      .card.p-4
+        %cite.mb-3= review.title
+        .text-right= review.body
