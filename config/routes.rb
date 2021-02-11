@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   delete "/sign_out" => "account#destroy", as: "sign_out"
   get "/sign_up" => "users#new", as: "sign_up"
 
+  get 'pricing', to: 'home#pricing'
+
   root to: 'home#index'
 end

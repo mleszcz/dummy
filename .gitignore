@@ -21,6 +21,8 @@
 
 coverage
 
+FINAL*
+
 *.sqlite3
 *.orig
 .DS_Store
