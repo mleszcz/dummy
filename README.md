@@ -6,9 +6,9 @@ This is a small, textbook Rails app, to be used for experiments and interviews.
 
 It's a standard Rails app, on SQLite. No extra services required.
 
-It runs on Ruby 2.4.2:
+Make sure you're on the same Ruby version it needs:
   ```
-  rbenv install 2.4.2
+  rbenv install
   ```
 
 Clone the repo and bundle:
