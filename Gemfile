@@ -3,7 +3,7 @@ source "https://rubygems.org"
 
 gem "sqlite3"
 gem "puma"
-gem "rails", '6.0.3.4'
+gem "rails"
 
 gem "sass-rails"
 gem "turbolinks"
