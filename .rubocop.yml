@@ -40,9 +40,11 @@ Style/BlockDelimiters:
 Style/BlockComments:
   Enabled: false
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
   Enabled: false
-  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
 
 Style/FormatString:
   Enabled: false
@@ -65,7 +67,7 @@ Layout/SpaceBeforeBlockBraces:
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
 
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Enabled: false
 
 Layout/TrailingWhitespace:
@@ -89,7 +91,7 @@ Lint/UselessAssignment:
 Layout/SpaceAroundOperators:
   Enabled: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 
 Style/RedundantBegin:
@@ -107,13 +109,13 @@ Style/CaseEquality:
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 
-Layout/IndentHash:
+Layout/FirstHashElementIndentation:
   Enabled: false
 
-Layout/IndentArray:
+Layout/FirstArrayElementIndentation:
   Enabled: false
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
@@ -125,10 +127,7 @@ Metrics/ModuleLength:
 Layout/ExtraSpacing:
   Enabled: true
 
-Style/BracesAroundHashParameters:
-  Enabled: false
-
-Style/UnneededInterpolation:
+Style/RedundantInterpolation:
   Enabled: true
 
 Style/Documentation:
@@ -194,7 +193,7 @@ Style/RescueStandardError:
 Style/Semicolon:
   Enabled: false
 
-Style/UnneededPercentQ:
+Style/RedundantPercentQ:
   Enabled: false
 
 Metrics/BlockLength:
