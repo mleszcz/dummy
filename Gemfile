@@ -1,20 +1,20 @@
 ruby File.read('.ruby-version').chomp
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sqlite3"
-gem "puma"
-gem "rails"
+gem 'sqlite3'
+gem 'puma'
+gem 'rails'
 
-gem "sass-rails"
-gem "turbolinks"
-gem "uglifier", ">= 1.3.0"
+gem 'sass-rails'
+gem 'turbolinks'
+gem 'uglifier', '>= 1.3.0'
 
 gem 'bootstrap'
 gem 'haml'
 
 gem 'clearance'
 
-gem "pry-rails"
+gem 'pry-rails'
 
 group :development do
   gem 'spring-commands-rspec'
@@ -22,16 +22,20 @@ group :development do
 end
 
 group :development, :test do
-  gem "dotenv-rails"
-  gem "pry-byebug"
-  gem "rubocop", require: false
-  gem "rubocop-rspec", require: false
+  gem 'dotenv-rails'
+  gem 'pry-byebug'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :test do
-  gem "capybara"
-  gem "database_cleaner"
-  gem "factory_bot"
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_bot'
   gem 'rails-controller-testing'
-  gem "rspec-rails"
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 5.0'
+end
+
+group :test do
 end

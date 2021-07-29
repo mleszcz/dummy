@@ -130,8 +130,12 @@ GEM
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.1.0)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     nio4r (2.5.7)
+    nokogiri (1.11.7)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     nokogiri (1.11.7-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.11.7-x86_64-darwin)
@@ -233,6 +237,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    shoulda-matchers (5.0.0)
+      activesupport (>= 5.2.0)
     spring (2.1.1)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -266,6 +272,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  ruby
   x86_64-darwin-18
   x86_64-linux
 
@@ -286,6 +293,7 @@ DEPENDENCIES
   rubocop
   rubocop-rspec
   sass-rails
+  shoulda-matchers (~> 5.0)
   spring-commands-rspec
   spring-commands-rubocop
   sqlite3
