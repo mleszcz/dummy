@@ -1,25 +1,42 @@
-Catering for everyone's needs
+%h1.text-center
+  Catering for everyone's needs
 
-We offer two different subscription plans. Join now!
+%h4.text-center.mb-5
+  We offer two different subscription plans. Join now!
 
-Silver
+.row.p-4
 
-• Up to 100 emails per month.
-• 2 different skins.
-• Web access.
+.row
+  .col-md-6
+    .col-md-12.px-5.py-2.border
+      %h2.text-center.p-2
+        Silver
 
-Just
-%strong £2/month
+      %ul.p-2
+        %li Up to 100 emails per month.
+        %li 2 different skins.
+        %li Web access.
 
-= link_to 'Sign up', sign_up_path(product: 'silver')
+      .text-center.p-2
+        Just
+        %strong £2/month
 
-Gold
+      .text-center.p-2
+        = link_to 'Sign up', sign_up_path(product: 'silver'), class: 'btn btn-primary'
 
-• Up to 1000 emails per month.
-• Customisable skins.
-• Web and mobile app access.
+  .col-md-6
+    .col-md-12.px-5.py-2.border
+      %h2.text-center.p-2
+        Gold
 
-For only
-%strong £7/month
+      %ul.p-2
+        %li Up to 1000 emails per month.
+        %li Customisable skins.
+        %li Web and mobile app access.
 
-= link_to 'Sign up', sign_up_path(product: 'gold')
+      .text-center.p-2
+        For only
+        %strong £7/month
+
+      .text-center.p-2
+        = link_to 'Sign up', sign_up_path(product: 'gold'), class: 'btn btn-primary'
